@@ -1,0 +1,1 @@
+This is the server side/backend of the website. It is written in express.js and hosted on vercel.
