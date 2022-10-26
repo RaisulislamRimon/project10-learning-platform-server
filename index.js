@@ -20,6 +20,12 @@ app.get("/course/:id", (req, res) => {
   res.send(course);
 });
 
+app.get("/checkout/:id", (req, res) => {
+  const id = req.params.id;
+  const course = courses.find((course) => course.id === id);
+  res.send(course);
+});
+
 app.use((req, res, next) => {
   res.status(404).send("Sorry can't find that!");
 });
