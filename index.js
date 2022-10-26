@@ -1,6 +1,9 @@
 const express = require("express");
+cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
+
+app.use(cors());
 
 const courses = require("./allCourses.json");
 
